@@ -1,0 +1,98 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f9e3e3;
+  font-family: 'Arial', sans-serif;
+  flex-direction: column;
+  padding: 10px; /* Add some padding to avoid content being stuck at edges */
+}
+
+.h1 {
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #d32f2f;
+  text-align: center;
+}
+
+/* Button container styling */
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.yes-button,
+.no-button {
+  font-size: 1.5em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.yes-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+
+.no-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+}
+
+.gif_container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .yes-button,
+  .no-button {
+    font-size: 1.2em;
+    padding: 8px 16px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .yes-button,
+  .no-button {
+    font-size: 1em;
+    padding: 8px 12px;
+  }
+
+  .gif_container img {
+    max-width: 90%; /* Make image smaller on small screens */
+  }
+
+  body {
+    padding: 5px; /* Less padding on small screens */
+  }
+}
